@@ -1,0 +1,650 @@
+body{
+    margin: 0;
+    width: 100%;
+}
+@font-face{
+    font-family: 'icon-make';
+    src: url(/Azure/Font/icon.woff);
+}
+@font-face{
+    font-family: 'sego-ui';
+    src: url(/Azure/Font/Sego-ui.woff2);
+}
+@font-face{
+    font-family: 'sego-semibold';
+    src: url(/Azure/Font/Semibold.woff2);
+}
+body{
+    margin: 0;
+    background-color: #f7f7f7;
+    color: #17253d;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 1.5rem;
+}
+*,::after,::before{
+    box-sizing: border-box;
+}
+img,svg{
+    vertical-align: middle;
+}
+
+
+
+.universal-header,.universal{
+    line-height: normal;
+    letter-spacing: normal;
+}
+.headerregion,.headeruniversal,header{
+    overflow-x: visible;
+}
+.full-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+header{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    min-width: 320px;
+    font-size: 15px;
+    color: #000;
+    background-color: #fff;
+}
+header *,header *:before,header *:after{
+    box-sizing: inherit;
+}
+
+.inside-header{
+    height: 50px;
+    background: #fff;
+    color: #000;
+
+}
+.inside-margin{
+    max-width:1600px;
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+.c-action-trigger{
+    min-width: 0;
+    padding: 6px 0 8px;
+    border: solid 1px transparent;
+    vertical-align: bottom;
+    outline: none;
+    background: transparent;
+}
+.c-action-trigger:before{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 15px;
+    vertical-align: baseline;
+    margin: 0;
+    content: "";
+    font-family: 'icon-make';
+    display: inline-block;
+    text-decoration: none;
+}
+.logo{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.logo img{
+    margin-top: -3px;
+    max-width: none;
+    width: 108px;
+    display: block;
+    height: auto;
+}
+.azure{
+    float: right;
+    position: relative;
+}
+
+.azure::before{
+    border-left: 2px solid #000;
+    height: 24px;
+    content: " ";
+    margin-left: 7px;
+    position: absolute;
+    top: 15px;
+    left: 0 ;
+
+}
+
+.azure a{
+    width: auto;
+    white-space: nowrap;
+    text-decoration: none;
+    position: relative;
+    margin-left: 18px;
+
+}
+
+.azure span{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -3px;
+    font-family: 'sego-semibold';
+}
+
+.header-nav{
+    display: block;
+}
+.small-azure{
+    float: right;
+}
+.small-azure button{
+    font-size: 15px;
+    font-family: 'sego-semibold';
+}
+.inside-nav{
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    
+}
+
+.inside-nav li{
+    height: 100%;
+
+   
+}
+.nav-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.nav-menu button:after{
+    font-family: 'icon-make';
+    content: "";
+    position: absolute;
+    font-size: 8px;
+    display: inline-block;
+    color: currentColor;
+    font-weight: 700;
+    padding-top: 7px;
+}
+
+.nav-menu button{
+    font-family: 'sego-ui';
+    background: transparent;
+    text-align: left;
+    padding: 16px 30px 16px 12px;
+    position: relative;
+}
+
+.right-side{
+    float: right;
+}
+.search{
+    float: left;
+    position: relative;
+    height: 38px;
+    min-width: 92px;
+    max-width: 296px;
+    margin-top: 20px;
+}
+
+.search button{
+    border: none;
+    height: 32px;
+    margin:2px 2px 1px 1px;
+    padding: 9px;
+    white-space: nowrap;
+    line-height: normal;
+    background: transparent;
+    margin-right: 18px;
+}
+.search button::after{
+    font-family: 'icon-make';
+    content: "";
+    border: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 2px;
+    position: relative;
+    text-indent: 0;
+    vertical-align: sub;
+
+}
+.right-nav{
+    display: block;
+}
+.right-ul{
+    padding: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.right-ul li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.right-ul a , .search span{
+    font-family: 'sego-ui';
+}
+.right-ul .a{
+    text-decoration: none;
+    background-color: transparent;
+    position: relative;
+}
+.started-azure, .sign-in{
+    text-decoration: none;
+    position: relative;
+}
+.li{
+    padding: 2px 0;
+}
+main{
+    display: block;
+}
+
+.themecolour{
+    color: #dceef8;
+}
+.master-image{
+   
+    max-height:100%;
+    overflow: hidden;
+}
+@media(min-width:860px){
+    .c-action-trigger{
+        display: none;
+    }
+    .small-azure{
+        display: none;
+    }
+    .inside-nav{
+        display: flex;
+        flex-direction: row;
+       
+    }
+
+}
+@media(min-width:1779px){
+    .azure a{
+     padding-right: 10px;
+     margin-left: 32px;
+    }
+    .azure::before{
+     padding-left: 24px;
+    }
+    .nav-menu button{
+     margin-right: -10px;
+     padding: 16px 30px 16px 16px;
+    }
+    .search button{
+     margin-right: 2px;
+     
+    }
+    .right-ul .a{
+     margin-left: 4px;
+     margin-right: 4px;
+    }
+     .started-azure,.sign-in{
+     margin-inline: 10px;
+     margin-left: 4px;
+     margin-right: 4px;
+    }
+ 
+ }
+ 
+ @media(min-width:1400px){
+     .search button{
+         position: relative;
+     }.text-inside{
+         max-width: 1530px;
+         padding-right: 5%;
+         padding-left: 5%;
+         width: 100%;
+         box-sizing: border-box;
+         margin: 0;
+     }
+     .row{
+         margin-right: -.5rem;
+         margin-left: -.5rem;
+     }
+ }
+ @media(min-width:1401px){
+     .text-inside{
+         max-width: 1530px;
+         padding-right: 5%;
+         padding-left: 5%;
+         width: 90%;
+         box-sizing: border-box;
+         margin-left: auto;
+         margin-right: auto;
+     }
+ }
+ @media(max-width:1399px){
+     .search button{
+         position: absolute;
+         margin-left: 6px;
+     }
+ }
+ @media(min-width:1084px){
+     .right-ul li{
+         display: inline-block;
+     }
+ }
+ 
+ @media screen and (min-width:860px){
+     .inside-header{
+         font-size: 13px;
+         height: 54px;
+         margin-bottom: 2px;
+         padding: 0 5%;
+     }
+     .c-action-trigger{
+         display: none;
+     }
+     .logo{
+         padding: 16px 6px 16px 10px;
+         float: left;
+         height: 100%;
+         margin-top: 1px;
+         width: 137px;
+         outline-offset: -2px;
+         color: #262626;
+         white-space: normal;
+     }
+     .azure{
+         font-size: 13px;
+     }
+     .azure a{
+         padding: 16px 6px 16px 10px;
+         float: left;
+         height: 100%;
+         margin-top: 1px;
+         outline-offset: -2px;
+         color: #262626;
+     }
+     .small-azure{
+         display: none;
+     }
+     .header-nav{
+         overflow: hidden;
+         height: 100%;
+         white-space: nowrap;
+         padding-left: 2px;
+         padding-right: 1px;
+         float: left;
+         flex: 1 1 auto;
+         font-size: 13px;
+         
+     }
+     .inside-nav{
+         white-space: nowrap;
+     }
+     .inside-nav li{
+         display: inline-block;
+         word-break: break-word;
+     }
+     .nav-menu{
+         position: static;
+ 
+     }
+     .nav-menu button{
+         color: #262626;
+         position: relative;
+         z-index: 701;
+         white-space: nowrap;
+         border: 1px solid transparent;
+         display: inline-block;
+         margin-top: 1px;
+         outline-offset: -2px;
+         
+     }
+     .nav-menu button:after{
+         right: 15px;
+     }
+     .right-side{
+         display: flex;
+         flex: none;
+         justify-content: flex-end;
+         font-size: 13px;
+ 
+     }
+     .search{
+         margin-top: 3px;
+         max-width: 100%;
+         min-width: 90px;
+         width: auto;
+     }
+     .search button{
+         margin-top: 0;
+         padding-top: 15px;
+         padding-bottom: 30px;
+         width:auto;
+     }
+     .right-most{
+         font-size: 13px;
+     }
+     .right-nav{
+         overflow: hidden;
+         height: 100%;
+         white-space: nowrap;
+         padding-left: 2px;
+         padding-right: 1px;
+     }
+     .right-ul{
+         white-space: nowrap;
+     }
+     .right-ul li{
+         word-break: break-word;
+         white-space: nowrap;
+ 
+     }
+     .right-ul .a{
+         border: 1px solid transparent;
+         color: #262626;
+         display: inline-block;
+         margin-top: 1px;
+         padding: 16px 8px 10px;
+         height: 48px;
+         outline-offset: -2px;
+         white-space: normal;
+     }
+     .started-azure{
+         border: 1px solid;
+         border-radius: 3px;
+         background-color: #0078d4;
+         color: #ffffff;
+         border-color:#0078d4;
+         height: 31px;
+         margin: 1px 10px;
+         margin-top: 10px;
+         padding-top: 4px;
+         line-height: 1.5;
+         font-weight: 400;
+         font-size: 13px;
+         letter-spacing: normal;
+         display: inline-block;
+         padding-left:8px;
+         padding-right: 8px;
+         padding-bottom: 10px;
+         outline-offset: -2px;
+         
+     }
+     .sign-in{
+         border: 1px solid;
+         border-radius: 3px;
+         border-color: #000000;
+         color: #262626;
+         height: 31px;
+         margin: 1px 10px;
+         margin-top: 10px;
+         padding-top: 4px;
+         line-height: 1.5;
+         font-weight: 400;
+         font-size: 13px;
+         letter-spacing: normal;
+         display: inline-block;
+         padding-left:8px;
+         padding-right: 8px;
+         padding-bottom: 10px;
+         outline-offset: -2px;
+     }
+     .master-image{
+         display: block;
+     }
+     .sub-container{
+         max-width: 100vm;
+         padding-right: 3.5rem;
+         padding-left: 3.5rem;
+     }
+     .sub-row{
+         margin-left: -.5rem;
+         margin-right: -.5rem;
+     }
+     .col{
+         padding-right: .5rem;
+         padding-left: .5rem;
+     }
+ }
+ @media(min-width:1601px){
+     .inside-header{
+         padding: 0 4%;
+     }
+ }
+ @media only screen and (min-width:860px) and (max-width:1399px){
+     .right-side .search button span{
+         display: none;
+     }
+     .right-most{
+         display: none;
+     }
+     .inside-header{
+         padding-left: 24px;
+         padding-right: 24px;
+     }
+ }
+ @media only screen and (max-width:859px){
+     header{
+         margin-bottom: 34px;
+     }
+     .inside-header{
+         margin-bottom: 1px solid #e6e6e6;
+         height: 54px;
+     }
+     .inside-margin{
+         position: relative;
+         padding: 2px 0;
+     }
+     .c-action-trigger{
+         margin: 1px;
+         width: 48px;
+         height: 48px;
+         display: block;
+         font-size: 20px;
+         height: 48px;
+         color: #000;
+     }
+     .c-action-trigger:before{
+         width: 20px;
+         height: 20px;
+         margin-top: 7px;
+     }
+     .logo{
+         margin: 1px;
+         padding: 12px 4px;
+         float: none;
+         display: block;
+         position: absolute;
+         left: calc(50% - 60px);
+         height: auto;
+     }
+     .small-azure{
+         left: 0;
+         background: #fff;
+         display: block;
+         height: 34px;
+         position: absolute;
+         width: 100%;
+         top: 54px;
+     }
+     .small-azure button{
+         background-color: transparent;
+         border: 0;
+         color: #000;
+         display: block;
+         font-weight: 600;
+         height: 100%;
+         margin: 0 1px;
+         padding: 0 15px;
+         text-align: left;
+     }
+     .small-azure button:after{
+         font-size: 12px;
+         font-weight: 700;
+         padding-left: 11px;
+         position: relative;
+         top: 2px;
+         font-family: 'icon-make';
+         content: "";
+     }
+     .azure{
+         display: none;
+     }
+     .right-most{
+         display: none;
+     }
+     .header-nav{
+         display: none;
+     }
+     .right-side .search button span{
+         display: none;
+     }
+     .right-side{
+         margin: 0;
+         display: flex;
+         justify-content: flex-start;
+         flex: 1 0 auto;
+ 
+     }
+     .search{
+         display: block;
+         margin: 6px 0;
+         float: left;
+         min-width: 0;
+         width: 0;
+     }
+     .search button{
+         left: 1px;
+         padding: 8px 8px 8px 4px;
+         margin-left: 2px;
+         position: relative;
+         top: 1px;
+     }
+ 
+ }
+ @media(min-width:540px){
+     .container{
+         padding-top: 6rem;
+         padding-bottom: 6rem;
+     }
+ }
+.banner{
+    width: 100%;
+    position: relative;
+}
+.universal-header{
+    position: absolute;
+}
+.banner img{
+    width: 100%;
+    height: 630px;
+    object-fit: cover;
+}
